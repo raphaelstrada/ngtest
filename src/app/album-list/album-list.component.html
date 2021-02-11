@@ -1,0 +1,8 @@
+<section class="album-section">
+    <div>
+      <h4>Latest Albums</h4>
+    </div>
+    <div class="album-list">
+      <app-album *ngFor="let album of albums" [album]="album"></app-album>
+    </div>
+  </section>

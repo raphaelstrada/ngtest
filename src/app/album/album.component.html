@@ -1,0 +1,10 @@
+<div class="album">
+    <div>
+      <div class="details">
+        <h3>Name: {{album.name}} ({{album.year_released}}</h3>
+        <h4>Artist: {{getArtiste(album)}}</h4>
+        <!-- <h4>Album tracks: {{getAlbumTracks(album)}}</h4> -->
+        <div *ngFor="let track of getAlbumTracks(album)">#{{track.track}} {{track.name}}</div>
+      </div>
+    </div>
+  </div>
